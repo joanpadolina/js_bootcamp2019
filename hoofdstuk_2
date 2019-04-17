@@ -1,20 +1,20 @@
-// Hoofstuk 2 Opdrachten
-// Joan Padolina
+// Hoofstuk 2 Opdrachten //
+// Joan Padolina //
 
 
 // triangle loop
 
 let triangle = '#';
-for (i = 0; i < 7; i++) {
-  triangle = triangle + '#';
+for (i = 0; i < 7; i++) {      // de aantal loops
+  triangle = triangle + '#';   // Voegt # steeds 1x toe
   console.log(triangle);
 }
 
 // Fizz Buzz deel 1
 
-for (let number = 1; number < 100; number++) {
-  if (number % 3 == 0) {
-    console.log('fizz');
+for (let number = 1; number < 100; number++) { // telt tot 100
+  if (number % 3 == 0) {          // als het nummer deelbaar is door 3 en gelijk is aan null..
+    console.log('fizz');          // ..print fizz dan ui
   } else if (number % 5 == 0) {
     console.log('buzz');
   } else {
@@ -25,8 +25,8 @@ for (let number = 1; number < 100; number++) {
 // Fizz Buzz deel 2
 
 for (let number = 1; number < 100; number++) {
-  if (number % 3 == 0 && number % 5 == 0) {
-    console.log('FIZZBUZZ');
+  if (number % 3 == 0 && number % 5 == 0) {     // logical or - is het deelbaar door 3 en 5..
+    console.log('FIZZBUZZ');                    // ..print fizzbuzz
   } else if (number % 5 == 0) {
     console.log('buzz');
   } else if (number % 3 == 0) {
@@ -41,12 +41,12 @@ for (let number = 1; number < 100; number++) {
 
   const size = 8;
 
-  let lineOdd = " # # # #\n";
+  let lineOdd = " # # # #\n";       // handmatig patroon
   let lineEven = "# # # # \n";
 
-  let line = "";
+  let line = '';
 
-  for(let i = 0; i < size / 2; i++){
+  for(let i = 0; i < size / 2; i++){  // print het (16 gedeeld door 2) is 8x uit
     line = line + lineOdd + lineEven;
   }
 console.log(line);
@@ -58,7 +58,7 @@ for (let firstLine = 0; firstLine < size2; firstLine++) {
   let line2 = '';
   let a = '';
   if (firstLine % 2 == 0) {
-    a = " ";
+    a = ' ';
   } else {
     a = '#';
   }
